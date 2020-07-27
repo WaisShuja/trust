@@ -1,0 +1,74 @@
+/* G--Font for Header */
+@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Satisfy&display=swap");
+
+body {
+  /* background: papayawhip; */
+  margin: auto 0;
+}
+
+.headLog {
+  display: inline-flex;
+}
+
+/* logo */
+.image {
+  position: absolute;
+  width: 15%;
+  right: 1%;
+  top: 0.9%;
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: "Ma Shan Zheng", cursive;
+}
+
+#cont-Service {
+  /* text-align: center; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 2%;
+  border-radius: 12px;
+  min-width: fit-content;
+  background: rgba(123, 220, 190, 0.2);
+}
+
+/*  Service Images */
+.serviceImages {
+  display: inline-block;
+  text-align: center;
+  margin: 1% auto;
+}
+#col1 {
+  width: 300px;
+  height: 35vh;
+  margin: 3px;
+  border-radius: 3em;
+}
+#col2 {
+  width: 300px;
+  height: 35vh;
+  margin: 3px;
+  border-radius: 3em;
+}
+#col3 {
+  width: 290px;
+  height: 35vh;
+  margin: 3px;
+  border-radius: 3em;
+}
+/* Footer */
+.footer {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.795);
+  font-size: 90%;
+  border-radius: 0.2em;
+  width: 100%;
+  height: auto;
+}
+.footer a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.61);
+  text-decoration: none;
+  margin: 5px;
+}

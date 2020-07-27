@@ -1,0 +1,65 @@
+/* G--Font for Header */
+@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Satisfy&display=swap");
+
+body {
+  margin: 0 0;
+}
+
+.headLog {
+  display: inline-flex;
+}
+
+/* Image and Text inside */
+.container {
+  position: relative;
+  text-align: center;
+  background: rgb(162, 169, 175);
+}
+
+/* Pro Exper */
+.allPage {
+  min-height: calc(100vh - 20px);
+  min-width: fit-content;
+  background: rgba(203, 210, 218, 0.3);
+  padding: 2%;
+  border-radius: 12px;
+}
+
+/* LOGO */
+.image {
+  position: absolute;
+  width: 15%;
+  top: 0.9%;
+  right: 1%;
+  margin: 10px;
+}
+
+h1 {
+  font-family: "Ma Shan Zheng", cursive;
+}
+
+/*  Edu */
+#proEx {
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  color: chocolate;
+}
+
+/* Footer */
+.footer {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.795);
+  font-size: 90%;
+  border-radius: 0.2em;
+  width: 100%;
+  height: auto;
+}
+.footer a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.61);
+  text-decoration: none;
+  margin: 5px;
+}

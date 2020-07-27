@@ -1,0 +1,162 @@
+/****************************** New Styling **************************************/
+
+body {
+}
+
+/* LogoImage */
+
+.image {
+  position: absolute;
+  width: 15%;
+  top: 0.9%;
+  right: 1%;
+  margin: 10px;
+}
+
+/*  Whole page covering */
+.allPage {
+  min-height: calc(100vh - 20px);
+  min-width: fit-content;
+  background: rgba(225, 226, 228, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto auto;
+  border-radius: 12px;
+}
+/* Main picture */
+#CoridPic {
+  display: block;
+  size: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 50vh;
+}
+
+/* Image and Text inside */
+.container {
+  position: relative;
+  text-align: center;
+  background: rgba(166, 223, 192, 0.2);
+}
+
+/* Text over Image */
+div .getQoute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90%;
+  text-align: center;
+}
+/* Text itself */
+.getQoute a {
+  color: blue;
+  background: lightblue;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 0.3rem lightseagreen double;
+  border-radius: 2.6em;
+}
+
+/* getQoute hover */
+
+.getQoute :hover {
+  color: blue;
+  background: lightgrey;
+}
+
+/* Get a Qoute text in the first page */
+
+#call {
+  font-weight: bold;
+  font-size: 120%;
+  top: 9rem;
+  text-decoration: none;
+  padding: 1%;
+  display: inline;
+}
+
+.skills {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-size: 100%;
+  background-color: rgb(174, 179, 185);
+  color: rgb(42, 49, 58);
+  padding: 10px;
+  margin: 1%;
+  border: 1% gray ridge;
+  border-radius: 0.4em;
+}
+
+/* Temporarily head1 */
+.head {
+  /* display: inline-block; */
+  font-size: 130%;
+  padding-left: 1%;
+}
+
+#menu {
+  overflow: hidden;
+  background: white;
+  width: 90%; /* Full width */
+  text-align: center;
+}
+
+/* Links inside the navbar */
+#menu a {
+  /* position: block; */
+  display: inline-block;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  /* float: right; */
+  padding: 1%;
+  text-decoration: none;
+  font-size: 90%;
+  outline: 0.01em solid white;
+  outline-offset: -2px;
+}
+
+#menu a:hover {
+  color: blue;
+}
+
+.serviceImages {
+  display: inline-block;
+  text-align: center;
+}
+#col1 {
+  width: 300px;
+  height: 35vh;
+  margin: 3px;
+  border-radius: 3em;
+}
+#col2 {
+  width: 300px;
+  height: 35vh;
+  margin: 3px;
+  border-radius: 3em;
+}
+#col3 {
+  width: 290px;
+  height: 35vh;
+  margin: 3px;
+  border-radius: 3em;
+}
+
+/* Footer */
+.footer {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.795);
+  font-size: 90%;
+  border-radius: 0.2em;
+  width: 100%;
+  height: auto;
+}
+.footer a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.61);
+  text-decoration: none;
+  margin: 5px;
+}
