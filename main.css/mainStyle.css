@@ -11,6 +11,7 @@ body {
   top: 0.9%;
   right: 1%;
   margin: 10px;
+  box-sizing:border-box;
 }
 
 /*  Whole page covering */
