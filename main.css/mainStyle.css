@@ -1,97 +1,23 @@
 /****************************** New Styling **************************************/
 
 body {
+  margin: 0;
+  padding: 0;
 }
 
 /* LogoImage */
 
 .image {
   position: absolute;
-  width: 15%;
+  width: 14%;
   top: 0.9%;
   right: 1%;
-  margin: 10px;
-  box-sizing:border-box;
+  margin: 5px;
+  margin-top: 0px;
+  box-sizing: border-box;
 }
 
-/*  Whole page covering */
-.allPage {
-  min-height: calc(100vh - 20px);
-  min-width: fit-content;
-  background: rgba(225, 226, 228, 0.3);
-  margin-left: auto;
-  margin-right: auto;
-  padding: auto auto;
-  border-radius: 12px;
-}
-/* Main picture */
-#CoridPic {
-  display: block;
-  size: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  height: 50vh;
-}
-
-/* Image and Text inside */
-.container {
-  position: relative;
-  text-align: center;
-  background: rgba(166, 223, 192, 0.2);
-}
-
-/* Text over Image */
-div .getQoute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 90%;
-  text-align: center;
-}
-/* Text itself */
-.getQoute a {
-  color: blue;
-  background: lightblue;
-  text-decoration: none;
-  padding: 0.5rem;
-  border: 0.3rem lightseagreen double;
-  border-radius: 2.6em;
-}
-
-/* getQoute hover */
-
-.getQoute :hover {
-  color: blue;
-  background: lightgrey;
-}
-
-/* Get a Qoute text in the first page */
-
-#call {
-  font-weight: bold;
-  font-size: 120%;
-  top: 9rem;
-  text-decoration: none;
-  padding: 1%;
-  display: inline;
-}
-
-.skills {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-style: oblique;
-  font-size: 100%;
-  background-color: rgb(174, 179, 185);
-  color: rgb(42, 49, 58);
-  padding: 10px;
-  margin: 1%;
-  border: 1% gray ridge;
-  border-radius: 0.4em;
-}
-
-/* Temporarily head1 */
+/*  head1 */
 .head {
   /* display: inline-block; */
   font-size: 130%;
@@ -101,7 +27,7 @@ div .getQoute {
 #menu {
   overflow: hidden;
   background: white;
-  width: 90%; /* Full width */
+  width: 100%; /* Full width */
   text-align: center;
 }
 
@@ -121,6 +47,86 @@ div .getQoute {
 
 #menu a:hover {
   color: blue;
+}
+
+/*  Call Button */
+#call {
+  position: fixed;
+  font-weight: bold;
+  font-size: 120%;
+  top: 9rem;
+  text-decoration: none;
+  right: 5%;
+  padding: 1%;
+  color: rgba(255, 0, 0, 0.9);
+  background: rgba(196, 150, 150, 0.6);
+}
+/*  Whole page covering */
+.allPage {
+  min-height: calc(100vh - 20px);
+  min-width: fit-content;
+
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Main picture -> Image and Text inside */
+.container {
+  background: url("../images/color12.jpg") center/cover, no-repeat;
+  background-attachment: fixed;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+.container a {
+  font-style: italic;
+  font-size: 140%;
+  text-decoration: none;
+  color: rgb(0, 255, 255);
+  background-color: rgb(155, 12, 155);
+  font-weight: bold;
+  /* border: 1px rgb(133, 102, 133) solid;
+  border-radius: 15px; */
+}
+/* getQoute hover */
+.container a:hover {
+  color: blue;
+  background: #fff;
+}
+.needPainter {
+  position: absolute;
+  color: rgb(0, 0, 6);
+  font-weight: bold;
+  font-size: 110%;
+  top: 10%;
+  left: 20%;
+  right: 20%;
+}
+
+/* Get a Qoute text in the first page */
+
+.skills {
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-size: 100%;
+  background-color: rgba(216, 220, 224, 0.5);
+  background: url("../images/color2.jpg");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  color: rgb(155, 8, 123);
+  padding: 10px;
+  margin: 1%;
+  border: 1% gray ridge;
+  border-radius: 0.4em;
+  line-height: 2.5em;
+  font-weight: bold;
 }
 
 .serviceImages {
@@ -144,6 +150,20 @@ div .getQoute {
   height: 35vh;
   margin: 3px;
   border-radius: 3em;
+}
+
+/*  Form  */
+#form {
+  background: url("../images/color1.jpg") center/cover, no-repeat;
+  text-align: left;
+  padding-left: 15%;
+  font-size: 130%;
+  margin-bottom: 13px;
+}
+#form label,
+input {
+  font-size: 100%;
+  width: auto;
 }
 
 /* Footer */

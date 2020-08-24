@@ -6,9 +6,10 @@
       http-equiv=" content-Type"
       content="text/html; charset=windows-1252"
     />
-	<meta name="google-site-verification" 
-	content="oeBdRljkBmC5ZXbQ3K7FricoVEDYfx2GbZTr6XBs1jQ" />
-    
+    <meta
+      name="google-site-verification"
+      content="oeBdRljkBmC5ZXbQ3K7FricoVEDYfx2GbZTr6XBs1jQ"
+    />
 
     <meta
       name="description"
@@ -150,35 +151,23 @@
       </div>
     </div>
 
+    <a href="tel:+61423492494" id="call">Call us</a>
+
+    <!-- Main Display Picture-->
+    <div class="container">
+      <a href="./Contact/contact.html"> GET A QUOTE > </a>
+    </div>
+    <p class="needPainter">
+      Need Painter ? <br />
+      Proudly serving all around Australia
+    </p>
+
+    <!--  Whole Page -->
+
     <div class="allPage">
-      <a href="tel:+61423492494" id="call">Call</a>
-
-      <div class="container">
-        <img src="./images/color3.jpg" alt="baImg" id="CoridPic" />
-
-        <div class="getQoute">
-          <a href="./Contact/contact.html"> GET A QOUTE > </a>
-        </div>
-        <p
-          style="
-            color: rgb(0, 7, 6);
-            background: rgba(236, 231, 210, 0.527);
-            width: fit-content;
-            font-weight: bold;
-            font-size: 90%;
-            position: absolute;
-            top: 20%;
-            left: 17%;
-            right: 30%;
-          "
-        >
-          Need Painter ? <br />
-
-          Proudly serving all around Australia
-        </p>
-      </div>
-
-      <h2>Skills & Capabilites</h2>
+      <h2 style="color: rgb(136, 36, 36); margin: 0; padding: 0;">
+        Skills & Capabilites
+      </h2>
 
       <p class="skills">
         <b>Sydeny CBD</b><br />
@@ -207,7 +196,7 @@
       <br />
       <br />
 
-      <p
+      <!-- <p
         style="
           font-style: italic;
           font-weight: bold;
@@ -215,17 +204,60 @@
           font-size: 28px;
           text-align: center;
         "
-      ></p>
-    </div>
+      ></p> -->
 
+      <div id="form">
+        <form
+          action="https://formspree.io/trustpainting@yahoo.com"
+          method="POST"
+        >
+          <br />
+
+          <label for="name">Your Name:</label><br />
+          <input type="text" name="name" id="name" placeholder="" /><br />
+
+          <label for="suburb">Your Suburb</label><br />
+          <input type="text" name="suburb" id="suburb" placeholder="" /><br />
+
+          <label for="email">Email</label><br />
+          <input type="email" name="email" id="name" placeholder="" /><br />
+
+          <label for="phone">Phone</label><br />
+          <input type="tel" name="phone" id="phone" placeholder="+61" /><br />
+
+          Please tell us how we can help
+          <br />
+          <textarea type="text" name="textarea" rows="10" cols="40"></textarea
+          ><br />
+
+          <!-- Please click on the chekbox to continue <br><br>
+          <img src="recaptcha.jpg" alt="recaptcha"> <br><br> -->
+
+          <div>
+            <input
+              style="
+                background: black;
+                color: white;
+                font-size: 100%;
+                cursor: pointer;
+                padding: 5px;
+              "
+              type="submit"
+              value="Submit"
+              onclick=""
+            /><br />
+          </div>
+        </form>
+      </div>
+
+      <!-- page end -->
+    </div>
     <!-- Footer  -->
 
     <div class="footer">
       <a href="tel:0423492494"> Call Zubair: 0423492494 </a> |
       <!-- <a href="tel: 0490207413">Call Alisan: 0490207413 </a> | -->
-      <a href="mailto:trustpainting@yahoo.com">
-        Email us: trustpainting@yahoo.com</a
-      >
+      <a href="mailto:trustpainting@yahoo.com"> trustpainting@yahoo.com</a>
       |
       <!-- <a
             href="https://www.facebook.com/A-Z-painting-and-repairs-112462330175631/"
@@ -234,7 +266,7 @@
           </a> -->
 
       <p style="text-align: center; color: #000;">
-        &COPY; TrustP-R 2020
+        &COPY;TrustP-R 2020
       </p>
     </div>
   </body>
