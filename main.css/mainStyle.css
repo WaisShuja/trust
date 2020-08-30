@@ -58,7 +58,7 @@ body {
   position: fixed;
   font-weight: bold;
   font-size: 120%;
-  top: 9rem;
+  top: 8rem;
   text-decoration: none;
   right: auto;
 
@@ -116,7 +116,7 @@ body {
   background: rgba(247, 243, 243, 0.5);
   font-weight: bold;
   font-size: 110%;
-  top: 8%;
+  top: 9%;
   float: right;
   /* left: 20%;
   right: 20%; */
