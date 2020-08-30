@@ -9,10 +9,11 @@ body {
 
 .image {
   position: absolute;
-  width: 14%;
-  top: 0.9%;
-  right: 1%;
-  margin: 5px;
+  width: 15%;
+  height: 3%;
+  top: 0;
+  right: 0;
+  margin: 0px;
   margin-top: 0px;
   box-sizing: border-box;
 }
@@ -20,15 +21,18 @@ body {
 /*  head1 */
 .head {
   /* display: inline-block; */
-  font-size: 130%;
+  font-size: 150%;
   padding-left: 1%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #menu {
   overflow: hidden;
   background: white;
-  width: 100%; /* Full width */
+  width: 100%; /* Full-width; */
   text-align: center;
+  margin-bottom: 6px;
 }
 
 /* Links inside the navbar */
@@ -58,13 +62,18 @@ body {
   text-decoration: none;
   right: 5%;
   padding: 1%;
-  color: rgba(255, 0, 0, 0.9);
-  background: rgba(196, 150, 150, 0.6);
+  color: rgba(41, 7, 121, 0.9);
+  background: rgba(245, 239, 239, 0.6);
+}
+#call:hover {
+  color: red;
+  background: rgb(218, 172, 218);
 }
 /*  Whole page covering */
 .allPage {
   min-height: calc(100vh - 20px);
   min-width: fit-content;
+
   border-radius: 12px;
   justify-content: center;
   align-items: center;
@@ -72,9 +81,10 @@ body {
 }
 /* Main picture -> Image and Text inside */
 .container {
-  background: url("../images/color12.jpg") center/cover, no-repeat;
+  background: url("../images/color11.jpg") center/cover, no-repeat;
   background-attachment: fixed;
-  min-height: 90vh;
+
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,13 +92,17 @@ body {
   margin-top: 0;
   padding-top: 0;
 }
+
+/*  Get A QUOTE  TExt  */
 .container a {
   font-style: italic;
   font-size: 140%;
   text-decoration: none;
-  color: rgb(0, 255, 255);
-  background-color: rgb(155, 12, 155);
+  color: rgb(155, 12, 155);
+  background-color: rgb(248, 244, 248);
   font-weight: bold;
+  padding: 5px;
+  border-radius: 15px;
 }
 /* getQoute hover */
 .container a:hover {
@@ -97,12 +111,14 @@ body {
 }
 .needPainter {
   position: absolute;
-  color: rgb(0, 0, 6);
+  color: rgb(1, 1, 8);
+  background: rgba(247, 243, 243, 0.5);
   font-weight: bold;
   font-size: 110%;
   top: 10%;
   left: 20%;
   right: 20%;
+  width: fit-content;
 }
 
 /* Get a Qoute text in the first page */
@@ -110,7 +126,7 @@ body {
 .skills {
   font-family: "Times New Roman", Times, serif;
   font-style: oblique;
-  font-size: 100%;
+  font-size: 90%;
   background-color: rgba(216, 220, 224, 0.5);
   background: url("../images/color2.jpg");
   /* background-repeat: no-repeat; */
@@ -122,7 +138,7 @@ body {
   margin: 1%;
   border: 1% gray ridge;
   border-radius: 0.4em;
-  line-height: 2.5em;
+  line-height: 1.5em;
   font-weight: bold;
 }
 
@@ -151,6 +167,7 @@ body {
 
 /*  Form  */
 #form {
+  overflow: hidden;
   background: url("../images/color1.jpg") center/cover, no-repeat;
   text-align: left;
   padding-left: 15%;
@@ -159,6 +176,7 @@ body {
 }
 #form label,
 input {
+  overflow: hidden;
   font-size: 100%;
   width: auto;
 }
@@ -177,4 +195,196 @@ input {
   color: rgba(255, 255, 255, 0.61);
   text-decoration: none;
   margin: 5px;
+}
+
+@media screen and (min-width: 500px) {
+  /****************************** New Styling **************************************/
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* LogoImage RRRRRRRRRRRR */
+
+  .image {
+    position: absolute;
+    width: 14%;
+    height: auto;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+  }
+
+  /*  head1  RRRRRR */
+  .head {
+    /* display: inline-block; */
+    font-size: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 0;
+  }
+
+  #menu {
+    overflow: hidden;
+    background: white;
+    width: 100%; /* Full width */
+    text-align: center;
+  }
+
+  /* Links inside the navbar */
+  #menu a {
+    /* position: block; */
+    display: inline-block;
+    color: rgb(233, 18, 136);
+    background: rgba(0, 0, 0, 0.8);
+    /* float: right; */
+    padding: 1.5% 3%;
+    text-decoration: none;
+    font-size: 140%;
+    outline: 0.04em solid white;
+    outline-offset: -10px;
+  }
+
+  #menu a:hover {
+    color: blue;
+  }
+
+  /*  Call Button RRRRRRR */
+  #call {
+    position: fixed;
+    font-weight: bold;
+    font-size: 140%;
+    top: 10rem;
+    text-decoration: none;
+    right: 5%;
+    padding: 1%;
+    color: rgb(235, 34, 8);
+    background: rgb(161, 228, 228);
+  }
+  /*  Whole page covering */
+  .allPage {
+    min-height: calc(100vh - 40px);
+    min-width: auto;
+
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* Main picture -> Image and Text inside    RRRRRRRR  */
+  .container {
+    background: url("../images/color13.jpg") center/cover, no-repeat;
+    background-attachment: fixed;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Get A QUOTE  TEXT RRRRRR */
+  .container a {
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(155, 12, 155);
+    background-color: rgb(243, 236, 243);
+    font-weight: bold;
+    padding: 10px;
+
+    border-radius: 15px;
+  }
+  /* getQoute hover */
+  .container a:hover {
+    color: blue;
+    background: #fff;
+  }
+
+  /*  RRRRRRRRRRRR   */
+  .needPainter {
+    position: absolute;
+    color: rgb(7, 7, 192);
+    background: rgba(247, 243, 243, 0.5);
+    font-weight: bold;
+    font-size: 26px;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    width: fit-content;
+  }
+
+  /* Get a Qoute text in the first page  RRRRRRRRRRR */
+
+  .skills {
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    font-size: 25px;
+    background: url("../images/color2.jpg") center/contain, repeat;
+    color: rgb(155, 8, 123);
+    padding: 10px;
+    margin: 1%;
+    border: 1% gray ridge;
+    border-radius: 0.4em;
+    line-height: 2.5em;
+    font-weight: bold;
+  }
+
+  /*  RRRRRRRR  */
+  .serviceImages {
+    display: inline-block;
+    text-align: center;
+  }
+  #col1 {
+    width: 350px;
+    height: 35vh;
+    margin: 3px;
+    border-radius: 3em;
+  }
+  #col2 {
+    width: 350px;
+    height: 35vh;
+    margin: 3px;
+    border-radius: 3em;
+  }
+  #col3 {
+    width: 340px;
+    height: 35vh;
+    margin: 3px;
+    border-radius: 3em;
+  }
+
+  /*  Form  */
+  #form {
+    background: url("../images/color1.jpg") center/cover, no-repeat;
+    text-align: left;
+    padding-left: 15%;
+    font-size: 130%;
+    margin-bottom: 13px;
+  }
+  #form label,
+  input {
+    font-size: 100%;
+    width: auto;
+  }
+
+  /* Footer */
+  .footer {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.795);
+    font-size: 90%;
+    border-radius: 0.2em;
+    width: 100%;
+    height: auto;
+  }
+  .footer a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.61);
+    text-decoration: none;
+    margin: 5px;
+  }
 }
