@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow:hidden;
 }
 
 /* LogoImage */
@@ -387,4 +388,8 @@ input {
     text-decoration: none;
     margin: 5px;
   }
+}
+*{
+  padding:0;
+  margin:0;
 }
