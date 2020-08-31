@@ -21,7 +21,7 @@ body {
 /*  head1 */
 .head {
   /* display: inline-block; */
-  font-size: 150%;
+  font-size: 120%;
   padding-left: 1%;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -60,7 +60,8 @@ body {
   font-size: 120%;
   top: 9rem;
   text-decoration: none;
-  right: 5%;
+  right: auto;
+
   padding: 1%;
   color: rgba(41, 7, 121, 0.9);
   background: rgba(245, 239, 239, 0.6);
@@ -80,11 +81,12 @@ body {
   text-align: center;
 }
 /* Main picture -> Image and Text inside */
-.container {
-  background: url("../images/color11.jpg") center/cover, no-repeat;
-  background-attachment: fixed;
 
-  min-height: 500px;
+.container {
+  background: url("../images/color16\ -\ Copy.jpg") top/ contain, no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,9 +117,10 @@ body {
   background: rgba(247, 243, 243, 0.5);
   font-weight: bold;
   font-size: 110%;
-  top: 10%;
-  left: 20%;
-  right: 20%;
+  top: 8%;
+  float: right;
+  /* left: 20%;
+  right: 20%; */
   width: fit-content;
 }
 
@@ -147,19 +150,19 @@ body {
   text-align: center;
 }
 #col1 {
-  width: 300px;
+  width: 380px;
   height: 35vh;
   margin: 3px;
   border-radius: 3em;
 }
 #col2 {
-  width: 300px;
+  width: 380px;
   height: 35vh;
   margin: 3px;
   border-radius: 3em;
 }
 #col3 {
-  width: 290px;
+  width: 380px;
   height: 35vh;
   margin: 3px;
   border-radius: 3em;
