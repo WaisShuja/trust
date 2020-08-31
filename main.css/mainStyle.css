@@ -9,7 +9,7 @@ body {
 
 .image {
   position: absolute;
-  width: 15%;
+  width: 13%;
   height: 3%;
   top: 0;
   right: 0;
@@ -150,19 +150,19 @@ body {
   text-align: center;
 }
 #col1 {
-  width: 380px;
+  width: 330px;
   height: 35vh;
   margin: 3px;
   border-radius: 3em;
 }
 #col2 {
-  width: 380px;
+  width: 330px;
   height: 35vh;
   margin: 3px;
   border-radius: 3em;
 }
 #col3 {
-  width: 380px;
+  width: 330px;
   height: 35vh;
   margin: 3px;
   border-radius: 3em;
