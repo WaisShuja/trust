@@ -11,7 +11,7 @@ body {
   position: absolute;
   width: 13%;
   height: 3%;
-  top: 0;
+  top: 5px;
   right: 0;
   margin: 0px;
   margin-top: 0px;
@@ -25,6 +25,8 @@ body {
   padding-left: 1%;
   margin-bottom: 0;
   padding-bottom: 0;
+  position:relative;
+  z-index:1;
 }
 
 #menu {
@@ -212,7 +214,7 @@ input {
 
   .image {
     position: absolute;
-    width: 14%;
+    width: 15%;
     height: auto;
     top: 0;
     right: 0;
@@ -228,6 +230,8 @@ input {
     padding-bottom: 0px;
     margin-bottom: 0px;
     padding-left: 0;
+    position:relative;
+    z-index:1;
   }
 
   #menu {
