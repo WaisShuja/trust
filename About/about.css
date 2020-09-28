@@ -115,8 +115,9 @@ h3 {
   }
   h1 {
     /* display: inline-block; */
-    font-size: 100%;
-    right:5%;
+    font-size: 90%;
+    right:4%;
+    left:0.5%;
     padding-left: 1%;
     margin-bottom: 0;
     padding-bottom: 0;
