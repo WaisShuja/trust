@@ -78,7 +78,7 @@ h1 {
 }
 
 #form {
-  padding-left: 1%;
+  padding-left:2px;
   font-size: 100%;
 }
 /* Footer */
@@ -203,6 +203,7 @@ h1 {
   body {
     /* background: papayawhip; */
     margin: auto 0;
+    margin-left:2px;
   }
 
   /* logo */
@@ -248,7 +249,7 @@ h1 {
     z-index: 1;
     text-align: center;
     text-shadow: 0px 3px 2px rgb(212, 92, 12);
-    font-size:120%
+    font-size:90%
     animation: headOne 5s infinite;
   }
 
