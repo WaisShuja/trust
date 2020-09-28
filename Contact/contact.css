@@ -199,7 +199,7 @@ h1 {
 
  **************************************** Mobile Size *****************************************
  */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 470px) {
   body {
     /* background: papayawhip; */
     margin: auto 0;
@@ -248,7 +248,7 @@ h1 {
     z-index: 1;
     text-align: center;
     text-shadow: 0px 3px 2px rgb(212, 92, 12);
-    font-size: 1.3em;
+    font-size:120%
     animation: headOne 5s infinite;
   }
 
