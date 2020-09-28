@@ -1,12 +1,5 @@
-/* G--Font for Header */
-@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Satisfy&display=swap");
-
 body {
   margin: 0 0;
-}
-
-.headLog {
-  display: inline-flex;
 }
 
 /* Image and Text inside */
@@ -25,19 +18,41 @@ body {
   border-radius: 12px;
 }
 
-/* LOGO */
+/* logo */
 .image {
   position: absolute;
   width: 15%;
   height: auto;
-  top: 0;
-  right: 0;
-  margin: 0px;
-  box-sizing: border-box;
+  right: 1%;
+  top: -0px;
+  margin-left: 10px;
 }
 
 h1 {
-  font-family: "Ma Shan Zheng", cursive;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 2.3em;
+  text-shadow: 0px 3px 2px rgb(212, 92, 12);
+  animation: headOne 5s infinite;
+}
+
+@keyframes headOne {
+  0% {
+    color: black;
+  }
+  30% {
+    color: red;
+  }
+  50% {
+    color: purple;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: chocolate;
+  }
 }
 
 /*  Edu */
@@ -66,14 +81,11 @@ h3 {
   margin: 5px;
 }
 
-/*  For Larger screen */
-@media screen and (min-width: 480px) {
+/* ***************************         For Mobile screen      **************************************/
+@media screen and (max-width: 480px) {
   body {
     margin: 0 0;
-  }
-
-  .headLog {
-    display: inline-flex;
+    /* font-size: 1em; */
   }
 
   /* Image and Text inside */
@@ -91,20 +103,124 @@ h3 {
     padding: 2%;
     border-radius: 12px;
   }
-
-  /* LOGO */
   .image {
     position: absolute;
-    width: 10%;
+    width: 15%;
     height: auto;
-    top: 0;
+    top: 5px;
     right: 0;
     margin: 0px;
+    margin-top: 0px;
     box-sizing: border-box;
+  }
+  h1 {
+    /* display: inline-block; */
+    font-size: 1.3em;
+    padding-left: 1%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+  }
+  /*  Edu */
+  #proEx {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2em;
+    color: chocolate;
+  }
+
+  /* Footer */
+  .footer {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.795);
+    font-size: 90%;
+    border-radius: 0.2em;
+    width: 100%;
+    height: auto;
+  }
+  .footer a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.61);
+    text-decoration: none;
+    margin: 5px;
+  }
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+***************************         For Mobile screen      **************************************/
+@media screen and (max-width: 790px) {
+  body {
+    margin: 0 0;
+    /* font-size: 1em; */
+  }
+
+  /* Image and Text inside */
+  .container {
+    position: relative;
+    text-align: center;
+    background: rgb(162, 169, 175);
+  }
+
+  /* Pro Exper */
+  .allPage {
+    min-height: calc(100vh - 20px);
+    min-width: fit-content;
+    background: rgba(203, 210, 218, 0.3);
+    padding: 2%;
+    border-radius: 12px;
+  }
+  .image {
+    position: absolute;
+    width: 14%;
+    height: auto;
+    top: 0;
+    right: 8px;
+    margin: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    animation: logoo 2s 2;
+    animation-fill-mode: forwards;
   }
 
   h1 {
-    font-family: "Ma Shan Zheng", cursive;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 0px 3px 2px rgb(199, 19, 130);
+    animation: headOne 5s infinite;
+  }
+
+  @keyframes headOne {
+    0% {
+      color: black;
+    }
+    30% {
+      color: red;
+    }
+    50% {
+      color: purple;
+    }
+    75% {
+      color: green;
+    }
+    100% {
+      color: chocolate;
+    }
   }
 
   /*  Edu */
@@ -125,6 +241,8 @@ h3 {
     border-radius: 0.2em;
     width: 100%;
     height: auto;
+    text-align: center;
+    line-height: 0.9em;
   }
   .footer a {
     display: inline-block;

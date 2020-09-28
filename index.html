@@ -147,11 +147,12 @@
           src="./lOg/designTruste-Small.png"
           alt="logO"
         /><br />
-
-        <a href="index.html">Home</a>
-        <a href="Service/service.html">Service</a>
-        <a href="Contact/contact.html">Contact</a>
-        <a href="About/about.html">About us</a>
+        <li>
+          <a href="index.html">Home</a>
+          <a href="Service/service.html">Service</a>
+          <a href="Contact/contact.html">Contact</a>
+          <a href="About/about.html">About us</a>
+        </li>
       </div>
     </div>
 
@@ -160,7 +161,8 @@
     <!-- Main Display Picture-->
     <div class="container1"></div>
     <div class="container">
-      <a href="./Contact/contact.html"> GET A FREE QUOTE > </a>
+      <!--  Get a Quote -->
+      <a href="./Contact/contact.html"> GET A FREE QUOTE </a>
     </div>
     <p class="needPainter">
       Need a painter ? <br />
@@ -193,9 +195,11 @@
       <!-- Service Images -->
 
       <div class="serviceImages">
-        <img src="images/color1.jpg" id="col1" alt="col1" />
-        <img src="images/color5.jpg" id="col3" alt="col5" />
+        <span class="interior">Interior</span>
         <img src="images/color.10.jpg" id="col2" alt="col2" />
+        <img src="images/color1.jpg" id="col1" alt="col1" />
+        <span class="exterior">Exterior</span>
+        <!-- <img src="images/color5.jpg" id="col3" alt="col5" /> -->
       </div>
 
       <br />
@@ -230,7 +234,7 @@
           <label for="phone">Phone</label><br />
           <input type="tel" name="phone" id="phone" placeholder="+61" /><br />
 
-          Please tell us how we can help
+          <label>Please tell us how we can help</label>
           <br />
           <textarea type="text" name="textarea" rows="10" cols="40"></textarea
           ><br />
@@ -239,18 +243,8 @@
           <img src="recaptcha.jpg" alt="recaptcha"> <br><br> -->
 
           <div>
-            <input
-              style="
-                background: black;
-                color: white;
-                font-size: 100%;
-                cursor: pointer;
-                padding: 5px;
-              "
-              type="submit"
-              value="Submit"
-              onclick=""
-            /><br />
+            <input class="submit" type="submit" value="Submit" onclick="" />
+            <br /><br />
           </div>
         </form>
       </div>

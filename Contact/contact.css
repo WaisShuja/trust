@@ -1,8 +1,9 @@
-/* G--Font for Header */
-@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Satisfy&display=swap");
-
 body {
   margin: auto 0;
+}
+:root {
+  height: auto;
+  width: auto;
 }
 
 .wholePage {
@@ -10,37 +11,76 @@ body {
   margin-right: auto;
   padding: 1%;
   border-radius: 12px;
-  min-width: fit-content;
   padding: 0rem 5rem 0em 3rem;
 }
-#contactH1 {
-  display: inline-flex;
-}
 h1 {
-  color: #000;
-  font-family: "Ma Shan Zheng", cursive;
-  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  text-shadow: 0px 3px 2px rgb(212, 92, 12);
+  animation: headOne 5s infinite;
+}
+
+@keyframes headOne {
+  0% {
+    color: black;
+  }
+  30% {
+    color: red;
+  }
+  50% {
+    color: purple;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: chocolate;
+  }
 }
 
 /* Logo */
 .image {
   position: absolute;
   width: 15%;
+  height: auto;
   right: 1%;
-  top: 0.9%;
+  top: -0px;
   margin-left: 10px;
+  animation: logoo 4s 2;
+  animation-fill-mode: forwards;
 }
-
-.fHead {
-  color: black;
-  font-size: 120%;
+@keyframes logoo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  30% {
+    opacity: 0.3;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+  80% {
+    opacity: 0.75;
+    transform: scale(0.8);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY();
+  }
 }
 
 #form {
   padding-left: 1%;
   font-size: 100%;
 }
-
 /* Footer */
 .footer {
   display: inline-block;
@@ -49,10 +89,202 @@ h1 {
   border-radius: 0.2em;
   width: 100%;
   height: auto;
+  /* text-align: center; */
+  line-height: 0.9em;
 }
 .footer a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.61);
   text-decoration: none;
   margin: 5px;
+}
+
+/* **************************************** Ipad Size *****************************************/
+
+@media screen and (max-width: 790px) {
+  .image {
+    position: absolute;
+    width: 14%;
+    height: auto;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    animation: logoo 2s 2;
+    animation-fill-mode: forwards;
+  }
+  @keyframes logoo {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    30% {
+      opacity: 0.3;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.7);
+    }
+    80% {
+      opacity: 0.75;
+      transform: scale(0.8);
+    }
+    90% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  h1 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.8em;
+    text-shadow: 0px 3px 2px rgb(212, 92, 12);
+    animation: headOne 5s infinite;
+  }
+  @keyframes headOne {
+    0% {
+      color: black;
+    }
+    30% {
+      color: red;
+    }
+    50% {
+      color: purple;
+    }
+    75% {
+      color: green;
+    }
+    100% {
+      color: chocolate;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.795);
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .footer a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.61);
+    text-decoration: none;
+    margin: 5px;
+  }
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ **************************************** Mobile Size *****************************************
+ */
+@media screen and (max-width: 500px) {
+  body {
+    /* background: papayawhip; */
+    margin: auto 0;
+  }
+
+  /* logo */
+  .image {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    right: 2%;
+    top: -1px;
+    margin-left: 10px;
+    animation: logoo 3s 2;
+    animation-fill-mode: forwards;
+  }
+  @keyframes logoo {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    30% {
+      opacity: 0.3;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.7);
+    }
+    80% {
+      opacity: 0.75;
+      transform: scale(0.8);
+    }
+    90% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY();
+    }
+  }
+
+  h1 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-shadow: 0px 3px 2px rgb(212, 92, 12);
+    font-size: 1.3em;
+    animation: headOne 5s infinite;
+  }
+
+  @keyframes headOne {
+    0% {
+      color: black;
+    }
+    30% {
+      color: red;
+    }
+    50% {
+      color: purple;
+    }
+    75% {
+      color: green;
+    }
+    100% {
+      color: chocolate;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.795);
+    font-size: 90%;
+    border-radius: 0.2em;
+    width: 100%;
+    height: auto;
+    /* text-align: center; */
+    line-height: 0.9em;
+  }
+  .footer a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.61);
+    text-decoration: none;
+    margin: 5px;
+  }
 }
