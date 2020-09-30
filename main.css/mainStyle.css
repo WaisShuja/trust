@@ -707,7 +707,7 @@
 ***************************** New Styling **************************************/
 /*  This is for Mobile Size ( 0px to 480px not Desktop size  */
 
-@media screen and (max-width: 471px) {
+@media screen and (max-width: 500px) {
   body {
     margin: 0;
     padding: 0;
