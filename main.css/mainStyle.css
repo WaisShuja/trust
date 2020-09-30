@@ -707,7 +707,7 @@
 ***************************** New Styling **************************************/
 /*  This is for Mobile Size ( 0px to 480px not Desktop size  */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   body {
     margin: 0;
     padding: 0;
@@ -840,9 +840,10 @@
   /* Main picture -> Image and Text inside */
 
   .container {
-    background: url("../images/color16\ -\ Copy.jpg") center/ contain, no-repeat;
+    background: url("../images/color16\ -\ Copy.jpg");
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 460px;
     display: flex;
     justify-content: center;
