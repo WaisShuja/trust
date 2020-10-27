@@ -18,10 +18,7 @@ body {
   border-radius: 12px;
 }
 
-.headLog {
-  display: flex;
-  justify-content: space-around;
-}
+
 /* logo */
 .image {
   position: absolute;
@@ -35,7 +32,7 @@ body {
 h1 {
   position: relative;
   z-index: 1;
-  text-align: center;
+  text-align: left;
   font-size: 2.3em;
   text-shadow: 0px 3px 2px rgb(212, 92, 12);
   animation: headOne 5s infinite;
