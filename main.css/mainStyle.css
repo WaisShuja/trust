@@ -280,6 +280,9 @@
     text-shadow: 0px 5px 5px rgb(4, 252, 4);
   }
 
+  .skill-line {
+    background: rgba(200, 200, 200, 0.4);
+  }
   #col2 {
     width: 500px;
     height: 400px;
@@ -307,7 +310,6 @@
     text-align: left;
     padding-left: 15%;
     font-size: 130%;
-    margin-bottom: 13px;
   }
   #form label,
   input {
@@ -316,27 +318,35 @@
   }
 
   #form .submit {
-    background: rgb(20, 125, 173);
-    color: rgb(249, 249, 250);
+    color: rgb(0, 0, 10);
     font-size: 80%;
     cursor: pointer;
-    padding: 5px 20px;
-    border-radius: 50%;
+    margin-bottom: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
   }
   .footer {
-    display: inline-block;
+    display: flex;
     background: rgba(0, 0, 0, 0.795);
-    font-size: 150%;
-    border-radius: 0.2em;
+    font-size: 140%;
     width: 100%;
-    height: 90px;
-    text-align: center;
+    justify-content: center;
   }
+
+  .fa-facebook {
+    color: rgb(255, 255, 255);
+    background: rgb(7, 84, 156);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 3px 0;
+    padding: 20px;
+  }
+
   .footer a {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.61);
+    color: rgba(247, 244, 57, 0.952);
     text-decoration: none;
-    margin: 5px;
+    padding: 20px;
   }
 }
 /*
@@ -598,7 +608,10 @@
       color: black;
     }
   }
-  /*  RRRRRRRR  */
+  .skill-line {
+    background: rgba(200, 200, 200, 0.4);
+  }
+  /*  Service Images on the Sreen */
   .serviceImages {
     display: inline-block;
     text-align: center;
@@ -644,7 +657,6 @@
     text-align: left;
     padding-left: 15%;
     font-size: 130%;
-    margin-bottom: 13px;
   }
   #form label,
   input {
@@ -653,27 +665,44 @@
   }
 
   #form .submit {
-    background: rgb(20, 125, 173);
-    color: rgb(249, 249, 250);
+    color: rgb(0, 0, 10);
     font-size: 80%;
     cursor: pointer;
-    padding: 5px 20px;
-    border-radius: 45%;
+    margin-bottom: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
   }
   .footer {
-    display: inline-block;
+    display: flex;
     background: rgba(0, 0, 0, 0.795);
-    font-size: 1.2em;
-    border-radius: 0.2em;
+    font-size: 20px;
     width: 100%;
     height: auto;
-    text-align: center;
+    justify-content: space-evenly;
   }
+  .fa-facebook {
+    color: rgb(255, 255, 255);
+    background: rgb(7, 84, 156);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 3px 0;
+    padding: 20px;
+  }
+
   .footer a {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.61);
     text-decoration: none;
-    margin: 5px;
+    padding: 15px;
+    color: khaki;
+  }
+  .footer fa-facebook {
+    font-size: 20px;
+  }
+
+  .footer p {
+    color: rgb(17, 1, 1);
+    font-size: 15px;
+    font-weight: 50;
   }
 }
 
@@ -707,7 +736,7 @@
 ***************************** New Styling **************************************/
 /*  This is for Mobile Size ( 0px to 480px not Desktop size  */
 
-@media screen and (max-width: 471px) {
+@media screen and (max-width: 500px) {
   body {
     margin: 0;
     padding: 0;
@@ -840,7 +869,9 @@
   /* Main picture -> Image and Text inside */
 
   .container {
-    background: url("../images/color16\ -\ Copy.jpg") center/ contain, no-repeat;
+    background: url("../images/color16\ -\ Copy.jpg");
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 460px;
@@ -904,10 +935,17 @@
       color: black;
     }
   }
+  .skill-line {
+    background: rgba(200, 200, 200, 0.4);
+  }
+
+  /* Images on the page */
   .serviceImages {
     display: inline-block;
     text-align: center;
   }
+
+  /* Interior Image */
   #col1 {
     width: 350px;
     height: 35vh;
@@ -922,6 +960,8 @@
     font-weight: bold;
     text-shadow: 0px 5px 2px rgb(40, 4, 243);
   }
+  /* Exterior Image */
+
   .exterior {
     position: absolute;
     transform: translate(-230px, 100px);
@@ -936,12 +976,6 @@
     margin: 3px;
     border-radius: 3em;
   }
-  #col3 {
-    width: 340px;
-    height: 35vh;
-    margin: 3px;
-    border-radius: 3em;
-  }
 
   /*  Form  */
   #form {
@@ -950,7 +984,6 @@
     text-align: left;
     padding-left: 10%;
     font-size: 130%;
-    margin-bottom: 13px;
   }
   #form label,
   input {
@@ -960,27 +993,33 @@
   }
 
   #form .submit {
-    background: rgb(20, 125, 173);
-    color: rgb(249, 249, 250);
+    color: rgb(0, 0, 10);
     font-size: 80%;
     cursor: pointer;
-    padding: 5px 20px;
-    border-radius: 45%;
+    margin-bottom: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
   }
   .footer {
-    display: inline-block;
+    display: flex;
     background: rgba(0, 0, 0, 0.795);
-    font-size: 90%;
-    border-radius: 0.2em;
+    font-size: 110%;
     width: 100%;
     height: auto;
-    /* text-align: center; */
-    line-height: 0.9em;
+    justify-content: space-evenly;
+  }
+  .fa-facebook {
+    color: rgb(255, 255, 255);
+    background: rgb(7, 84, 156);
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
   }
   .footer a {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.61);
     text-decoration: none;
-    margin: 5px;
+    padding: 10px;
+    color: rgb(217, 245, 115);
   }
 }

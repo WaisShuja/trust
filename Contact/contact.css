@@ -1,22 +1,16 @@
 body {
-  margin: auto 0;
+  margin: 0;
+  padding: 0;
 }
-:root {
+html {
   height: auto;
-  width: auto;
 }
 
-.wholePage {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1%;
-  border-radius: 12px;
-  padding: 0rem 5rem 0em 3rem;
-}
 h1 {
   position: relative;
   z-index: 1;
   text-align: center;
+  font-size: 2em;
   text-shadow: 0px 3px 2px rgb(212, 92, 12);
   animation: headOne 5s infinite;
 }
@@ -77,29 +71,78 @@ h1 {
   }
 }
 
+.fHead {
+  font-size: 25px;
+}
+/*  Form  */
 #form {
-  padding-left: 1%;
+  background: url("../images/color1.jpg") center/cover, no-repeat;
+  text-align: left;
+  padding-left: 15%;
+  font-size: 130%;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#form label,
+input {
   font-size: 100%;
+  width: auto;
+}
+
+#form .submit {
+  color: rgb(0, 0, 10);
+  font-size: 80%;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
 }
 /* Footer */
 .footer {
-  display: inline-block;
+  display: flex;
   background: rgba(0, 0, 0, 0.795);
-  font-size: 90%;
-  border-radius: 0.2em;
+  font-size: 140%;
   width: 100%;
-  height: auto;
-  /* text-align: center; */
-  line-height: 0.9em;
-}
-.footer a {
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.61);
-  text-decoration: none;
-  margin: 5px;
+  justify-content: center;
 }
 
-/* **************************************** Ipad Size *****************************************/
+.fa-facebook {
+  color: rgb(255, 255, 255);
+  background: rgb(7, 84, 156);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 3px 0;
+  padding: 20px;
+}
+
+.footer a {
+  color: rgba(247, 244, 57, 0.952);
+  text-decoration: none;
+  padding: 20px;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************** Ipad Size *****************************************/
 
 @media screen and (max-width: 790px) {
   .image {
@@ -163,21 +206,63 @@ h1 {
     }
   }
 
+  /*  Form Text */
+  .fHead {
+    font-size: 20px;
+  }
+  /*  Form  */
+  #form {
+    background: url("../images/color1.jpg") center/cover, no-repeat;
+    text-align: left;
+    padding-left: 15%;
+    font-size: 130%;
+  }
+  #form label,
+  input {
+    font-size: 100%;
+    width: auto;
+  }
+
+  #form .submit {
+    color: rgb(0, 0, 10);
+    font-size: 80%;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+  }
+
   /* Footer */
   .footer {
-    display: inline-block;
+    display: flex;
     background: rgba(0, 0, 0, 0.795);
-    font-size: 1.2em;
-    border-radius: 0.2em;
+    font-size: 20px;
     width: 100%;
     height: auto;
-    text-align: center;
+    justify-content: space-evenly;
   }
+  .fa-facebook {
+    color: rgb(255, 255, 255);
+    background: rgb(7, 84, 156);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 3px 0;
+    padding: 20px;
+  }
+
   .footer a {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.61);
     text-decoration: none;
-    margin: 5px;
+    padding: 15px;
+  }
+  .footer fa-facebook {
+    font-size: 20px;
+  }
+
+  .footer p {
+    color: rgb(17, 1, 1);
+    font-size: 15px;
+    font-weight: 50;
   }
 }
 
@@ -270,21 +355,54 @@ h1 {
     }
   }
 
+  .fHead {
+    font-size: 15px;
+  }
+  /*  Form  */
+  #form {
+    overflow: hidden;
+    background: url("../images/color1.jpg") center/cover, no-repeat;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 130%;
+    margin-bottom: 0;
+  }
+  #form label,
+  input {
+    overflow: hidden;
+    font-size: 60%;
+    width: auto;
+  }
+
+  #form .submit {
+    color: rgb(0, 0, 10);
+    font-size: 80%;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+  }
   /* Footer */
   .footer {
-    display: inline-block;
+    display: flex;
     background: rgba(0, 0, 0, 0.795);
-    font-size: 90%;
-    border-radius: 0.2em;
+    font-size: 110%;
     width: 100%;
     height: auto;
-    /* text-align: center; */
-    line-height: 0.9em;
+    justify-content: space-evenly;
+  }
+  .fa-facebook {
+    color: rgb(255, 255, 255);
+    background: rgb(7, 84, 156);
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
   }
   .footer a {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.61);
     text-decoration: none;
-    margin: 5px;
+    padding: 10px;
+    color: rgb(217, 245, 115);
   }
 }
