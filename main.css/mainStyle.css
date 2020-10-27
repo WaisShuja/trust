@@ -999,7 +999,7 @@
     font-family: "Times New Roman", Times, serif;
     font-weight: 700;
   }
-  .footer {
+.footer {
     display: flex;
     background: rgba(0, 0, 0, 0.795);
     font-size: 110%;
