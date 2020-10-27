@@ -873,7 +873,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 460px;
     display: flex;
     justify-content: center;
