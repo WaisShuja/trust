@@ -384,7 +384,7 @@ input {
     font-weight: 700;
   }
   /* Footer */
-  .footer {
+.footer {
     display: flex;
     background: rgba(0, 0, 0, 0.795);
     font-size: 110%;
