@@ -85,30 +85,6 @@ h3 {
   font-size: 1.2em;
   text-align: center;
 }
-/* animation: head3 30s infinite;
-}
-@keyframes head3 {
-  0% {
-    color: black;
-    transform: translateX(10px);
-  }
-  25% {
-    color: crimson;
-    transform: translateX(30px);
-  }
-  0% {
-    color: chartreuse;
-    transform: translateX(50px);
-  }
-  75% {
-    color: rgb(185, 14, 14);
-    transform: translateX(-20px);
-  }
-  100% {
-    color: rgb(44, 2, 2);
-    transform: translateX(-30px);
-  }
-} */
 
 /*  Service Images */
 .displayImages {
@@ -135,30 +111,28 @@ h3 {
 }
 
 /* Footer */
+.footer {
+  display: flex;
+  background: rgba(0, 0, 0, 0.795);
+  font-size: 140%;
+  width: 100%;
+  justify-content: center;
+}
 
-  .footer {
-    display: flex;
-    background: rgba(0, 0, 0, 0.795);
-    font-size: 140%;
-    width: 100%;
-    justify-content: center;
-  }
+.fa-facebook {
+  color: rgb(255, 255, 255);
+  background: rgb(7, 84, 156);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 3px 0;
+  padding: 20px;
+}
 
-  .fa-facebook {
-    color: rgb(255, 255, 255);
-    background: rgb(7, 84, 156);
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    margin: 3px 0;
-    padding: 20px;
-  }
-
-  .footer a {
-    color: rgba(247, 244, 57, 0.952);
-    text-decoration: none;
-    padding: 20px;
-  }
+.footer a {
+  color: rgba(247, 244, 57, 0.952);
+  text-decoration: none;
+  padding: 20px;
 }
 
 /*
@@ -269,27 +243,22 @@ h3 {
   }
 
   /* Footer */
- .footer {
-    display: flex;
-    background: rgba(0, 0, 0, 0.795);
-    font-size: 18px;
-    width: 100%;
-    height: auto;
-    justify-content: space-evenly;
-  }
   .fa-facebook {
     color: rgb(255, 255, 255);
     background: rgb(7, 84, 156);
     width: 20px;
     height: 20px;
     text-align: center;
-    margin: 3px 0;
-    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    margin: 15px;
   }
 
   .footer a {
     text-decoration: none;
-    padding: 15px;
+    font-size: 13px;
+    padding: 10px;
+    color: khaki;
   }
   .footer fa-facebook {
     font-size: 20px;
@@ -298,10 +267,9 @@ h3 {
   .footer p {
     color: rgb(17, 1, 1);
     font-size: 15px;
-    font-weight: 50;
+    font-weight: 200;
   }
-
-
+}
 
 /*
 
@@ -341,7 +309,7 @@ h3 {
     width: 15%;
     height: auto;
     right: 2%;
-    top: 5px;
+    top: -1px;
     margin-left: 10px;
     animation: logoo 3s 7;
     animation-fill-mode: forwards;
@@ -378,12 +346,10 @@ h3 {
     z-index: 1;
     text-align: center;
     text-shadow: 0px 3px 2px rgb(52, 25, 204);
-    font-size: 1.5em;
+    font-size: 1.3em;
     animation: headOne 5s infinite;
   }
-  :root {
-    font-size: 0.8rem;
-  }
+
   @keyframes headOne {
     0% {
       color: black;
@@ -434,13 +400,13 @@ h3 {
   }
 
   /* Footer */
-    .footer {
+  .footer {
     display: flex;
     background: rgba(0, 0, 0, 0.795);
     font-size: 110%;
     width: 100%;
     height: auto;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
   }
   .fa-facebook {
     color: rgb(255, 255, 255);
@@ -448,13 +414,12 @@ h3 {
     width: 15px;
     height: 15px;
     text-align: center;
-    margin-top:10px;
+    margin-top: 10px;
     padding: 10px;
   }
   .footer a {
     text-decoration: none;
     padding: 10px;
-    color:rgb(217, 245, 115);
+    color: rgb(217, 245, 115);
   }
-
 }
